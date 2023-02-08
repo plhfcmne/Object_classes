@@ -47,7 +47,7 @@ public class Main {
         // Ищем контакт Иванов Иван4
         System.out.println();
 
-        //phoneBook.removeContact("Иванов Иван4");
+        phoneBook.removeContact("Иванов Иван4");
         // Удаляем контакт Иванов Иван4
         phoneBook.findContact("Иванов Иван4");
         // Ищем контакт Иванов Иван4

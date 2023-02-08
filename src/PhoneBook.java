@@ -20,18 +20,17 @@ public class PhoneBook {
 
     // Реализуем метод removeContact (удалить контакт)
     // Метод сдвигает массив влево на ячейку, удаляя ячейку под номером i
-    /*public void removeContact(String contactNick) {
+    public void removeContact(String contactNick) {
         for (int i = 0; i < contacts.length; i++) {
             if (contacts[i].getNick().equals(contactNick)) {
                 System.out.println(contacts[i].getNick() + " удален");
                 System.arraycopy(contacts, i + 1, contacts, i, size - i - 1);
                 contacts[size - 1] = null;
-                size-;
+                size--;
                 return;
             }
         }
     }
-*/
     // Реализуем метод findContact (найти контакт)
     public void findContact(String contactNick) {
         for (int i = 0; i < size; i++) {
