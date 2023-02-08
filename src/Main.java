@@ -59,6 +59,8 @@ public class Main {
         Contact c = new Contact("Иванов Иван", "89250000005");
         Contact c2 = new Contact("Иванов Иван", "89250000005");
         System.out.println(c.equals(c2));
+
+        System.out.println(new String("Tproger")==new String("Tproger"));
+    }
     }
 
-}

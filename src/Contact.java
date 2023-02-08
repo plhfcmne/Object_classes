@@ -28,11 +28,11 @@ public class Contact {
         return nick + ": " + phone;
     }
     @Override
-    public boolean equals(Object other) {
-        if (this.getClass() != other.getClass()) {
+    public boolean equals(Object o) {
+        if (this.getClass() != o.getClass()) {
             return false;
         }
-        Contact c2 = (Contact) other;
-        return nick.equals(c2.nick);
+        Contact c8 = (Contact) o;
+        return nick.equals(c8.nick);
     }
 }
