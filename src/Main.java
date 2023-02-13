@@ -1,5 +1,7 @@
 import org.w3c.dom.ls.LSOutput;
 
+import java.util.Arrays;
+
 public class Main {
     public static void main(String[] args) {
        /* Book warAndPeace = new Book();
@@ -60,7 +62,33 @@ public class Main {
         Contact c2 = new Contact("Иванов Иван", "89250000005");
         System.out.println(c.equals(c2));
 
-        System.out.println(new String("Tproger")==new String("Tproger"));
+        System.out.println(new String("Tproger") == new String("Tproger"));
+
+
+        String sentenceZero = "А муза рада музе без ума да разума";//предложение палиндром
+        String sentence = sentenceZero.toLowerCase(); //приводим символы к одному регистру
+        //System.out.println(sentence);
+
+        StringBuilder sb = new StringBuilder();//создаем пустую сущность
+        for (int i = 0; i < sentence.length(); i++) {
+            if (' '!=sentence.charAt(i)) {
+                sb.append(sentence.charAt(i)); //добавляем в строку sb все символы кроме пробелов
+            }
+        }
+        int counter=0; //создаем идентификатор для того, чтобы понять есть ли равные символы
+        for (int i = 0; i <= sb.length()/2+1; i++) {
+            if (sb.charAt(i) == sb.charAt(sb.length() - (i+1))) {
+                counter++;
+            } else break;//прерываем цикл, тк нет смысла проверять каждый символ, если первый уже не равен последнему
+        }
+            if (counter == sb.length() / 2+2) {
+                System.out.println("строка палиндром");
+            } else {
+                System.out.println("строка не палиндром");
+            }
+        int[] arr = {1,2,3};
+
+        int[] arr2 = Arrays.copyOf(arr, arr.length);
     }
-    }
+}
 
